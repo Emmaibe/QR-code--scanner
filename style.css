@@ -1,0 +1,104 @@
+:root {
+  --clr-primary-100: hsl(220, 15%, 55%);
+  --clr-primary-200: hsl(218, 44%, 22%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(212, 45%, 89%);
+
+  --ff-primary: "Outfit", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-100: 1.1rem;
+  --fs-200: 1.55rem;
+
+  --fs-heading: var(--fs-200);
+  --fs-body: var(--fs-100);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: var(--ff-body);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* 375 1440 */
+
+main {
+  height: 100vh;
+  background-color: var(--clr-neutral-200);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 22.5rem;
+  background-color: var(--clr-neutral-100);
+  padding: 1rem;
+  border-radius: 1.3rem;
+  margin: auto;
+}
+
+img {
+  border-radius: 0.7rem;
+}
+
+.texts {
+  padding: 2rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+  line-height: 1.9rem;
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: 1.5rem;
+}
